@@ -1,0 +1,43 @@
+% !Mode:: "TeX:UTF-8"
+%\documentclass[a4paper, 12pt]{article}
+
+\documentclass[twoside]{linux_thesis}
+\usepackage{latexsym,bm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{supertabular}
+\usepackage{indentfirst}
+\usepackage{multirow}
+\usepackage{ulem}
+
+
+\definecolor{VerbatimColor}{rgb}{0.9,0.9,0.9}
+
+\begin{document}
+
+\newcommand{\shell}[1]{\noindent\texttt{\$: #1}}
+
+%\begin{titlepage}
+%\titleLY
+%\end{titlepage}
+
+\include{chapter/titlepage}
+
+
+\tableofcontents
+
+% 文档介绍
+\include{chapter/c1}
+
+% 文档介绍
+\include{chapter/data}
+
+\include{chapter/lab}
+
+\include{chapter/analysis}
+
+\end{document}
